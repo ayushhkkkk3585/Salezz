@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Chart as ChartJS, defaults } from "chart.js/auto";
 import { Bar, Doughnut, Line } from "react-chartjs-2";
 import RangeSlider from "react-range-slider-input";
+import Navbar from "./Navbar";
 import "react-range-slider-input/dist/style.css";
 // defaults.maintainAspectRatio =false;
 defaults.responsive = true;
@@ -125,6 +126,7 @@ const Corecompo = () => {
 
   return (
     <>
+    <Navbar/>
       <div className="flex flex-col p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex flex-col w-full lg:w-2/3 gap-8">
